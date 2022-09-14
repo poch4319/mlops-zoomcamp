@@ -78,6 +78,10 @@ nano ~/.bashrc
 ```
 
 In `.bashrc`, add the following line:
+`.bashrc` 是一個可以設定一些 terminal 細節的檔案，例如定義某些指令的縮寫，或者設定某些系統 variable, 這裡我們用 export 去設定一個 variable, PATH 則是所謂的環境變量，底下的語法是，把 ${HOME}/soft 的路徑加在既有的環境變量上面 (也就是把 PATH 重新定義成 ${HOME}/soft 加上原本的 PATH 變量 ${PATH}, ${PATH} 上的每個路徑都是用 `:` 隔開的。環境變量的好處就是讓你執行指令的時候，系統會去這些環境變量看你執行的指令是不是有對應的程式可以運行你的指令。
+[bashrc 介紹](https://medium.com/johnliu-%E7%9A%84%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%B6%AD/linux-%E9%80%8F%E9%81%8E-bashrc-%E8%87%AA%E8%A1%8C%E8%A8%AD%E5%AE%9A%E6%88%96%E7%AE%A1%E7%90%86%E6%8C%87%E4%BB%A4-50cacc129)
+[PATH 變量介紹](https://blog.csdn.net/qlzx_syzx/article/details/53674823)
+
 
 ```bash
 export PATH="${HOME}/soft:${PATH}"
