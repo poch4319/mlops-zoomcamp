@@ -24,6 +24,15 @@ Code:
 
 Recommended development environment: Linux
 
+### Connect to EC2 using Gitbash or VScode
+- VScode in Windows
+- 把 .pem 放到 users/username/.ssh/
+- 然後設定 config file  
+- Gitbash
+```sh
+ssh -i .pem_file USERNAME(ubuntu)@IP_OF_EC2
+```
+
 ### Step 1: Download and install the Anaconda distribution of Python
 ```sh
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
@@ -45,10 +54,12 @@ sudo apt install docker.io
 To run docker without `sudo`:  
 - 首先創建 usergroup docker
 - 然後用 `usermod` user modification 去把 $USER 加入 docker group, 這樣權限就會跟著 `$USER` 進入這個 group 就不用 sudo 了
+- 然後 log out log back in 或者 vscode 全關重開登入
 
 ```sh
 sudo groupadd docker
 sudo usermod -aG docker $USER
+logout
 ```
 
 ### Step 4: Install Docker Compose
