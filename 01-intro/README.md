@@ -70,7 +70,8 @@ Make it executable
 chmod +x docker-compose
 ```
 
-Add to the `soft` directory to `PATH`. Open the `.bashrc` file with `nano`:
+Add to the `soft` directory to `PATH`. Open the `.bashrc` file with `nano`: 
+其中，此处的波浪号~，表示用户根目录，等价于$HOME
 
 ```sh
 nano ~/.bashrc
