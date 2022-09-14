@@ -73,6 +73,7 @@ cd soft
 
 To get the latest release of Docker Compose, go to https://github.com/docker/compose and download the release for your OS.  
 - 此連結可以透過去 docker-compose 的 github repo, 點右邊的 release, 選擇你要的版本, 拉到最下面找你要的系統版本去複製連結
+- `-O` 下載並命名，或者下載並放到指定路徑並命名，但是指定路徑要先做好
 ```sh
 wget https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -O docker-compose
 ```
